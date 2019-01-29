@@ -1,0 +1,33 @@
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+  margin:3px;
+}
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  margin:3px;
+}
+.err {
+  color: red;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+}
+.log{
+  padding: 5%;
+}
+.home{
+  padding: 5%;
+}
+.header{
+  text-align: right;
+}
+.drawHere{
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+}

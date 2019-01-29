@@ -1,0 +1,24 @@
+<div class="home grid-container" ng-controller="homeCtrl">
+  <div class="header">
+  Hi there {{fName}}! If you are not {{fName}} then please
+  <button type="button" name="button" ng-click="logout()">Log Out</button>
+  </div>
+  <div class="drawHere">
+
+    <div ng-class="{'circle': cir, 'square':!cir}" ng-repeat="num in arr track by $index"></div>
+  </div>
+
+  <div class="numIn">
+    <div class="err" ng-show="inError">
+      This is not between 1 and 5
+    </div>
+    Number of display elements:
+    <input type="number" name="" placeholder="number 1 to 5" ng-model="numShapes">
+    <button type="button" ng-click="update()">Update</button>
+  </div>
+  <div class="options grid-item">
+    <input type="radio" name="shape" ng-model="sh" value="c">Circle<br>
+    <input type="radio" name="shape" ng-model="sh" value="s">Square<br>
+  </div>
+  <button type="button" style="width:20%" ng-click="shape()">Change Shape</button>
+</div>
