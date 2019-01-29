@@ -6,6 +6,8 @@
   <label>Password: </label>
   <input type="password" name="pword" placeholder="Password"  ng-model="pword" required/>
   <br>
+  <div class="err" style="text-align:center" ng-show="nope">Incorrect User Name/Password</div>
+  <br>
   <button type="button" ng-click="login()" style="width:25%; justify-self:center">Login</button>
 </div>
 </div>

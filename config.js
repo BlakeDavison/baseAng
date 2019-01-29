@@ -54,6 +54,7 @@ app.controller('homeCtrl', function($scope, $rootScope, $location)
 app.controller('loginCtrl', function($scope, $rootScope, $http, $location)
 {
   let URL = "https://jsonplaceholder.typicode.com/users";
+  $scope.nope = false;
   $rootScope.loggedIn = false;
   $scope.login = function()
 {
@@ -73,11 +74,11 @@ app.controller('loginCtrl', function($scope, $rootScope, $http, $location)
             $location.path('/home');
           }
           else {
-
+            $scope.nope = true;
           }
         }
         else {
-
+          $scope.nope = true;
         }
     });
   });
