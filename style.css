@@ -19,7 +19,7 @@
   grid-gap: 10px;
 }
 .log{
-  padding: 5%;
+  padding: 10%;
 }
 .home{
   padding: 5%;
@@ -30,4 +30,14 @@
 .drawHere{
   display: inline-grid;
   grid-template-columns: repeat(5, 1fr);
+  border-style: solid;
+  border-color: #cc3399;
+  border-width: 2px;
+
+}
+button{
+  color: #000000;
+  background-color: #cc3399;
+  border: none;
+  height: 30px;
 }
